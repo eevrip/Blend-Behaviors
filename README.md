@@ -14,6 +14,10 @@ Go to scene "A-Blending Behaviors(Flee-Seek)"
 -MoveAgent(), gets the output from both models and blends the actions by using weights over each action.
 
 Scene:B-Blending Behaviors(Flee-Seek)-Jumping Skill
-This scene allows the agent to jump. The appropriate models were received while using the scene TrainingWithJump.
+This scene allows the agent to jump. The appropriate models were received while using the scene TrainingWithJump. Models names: 
+-Trained with discrete jumping action. Decision Requester properties: Desicion Period: 10, Take Actions in between enabled.
+"SeekBehaviorWithJumpingSkill02", "FleeBehaviorWithJumpingSkill02".(Problems: jump high sometimes. take actions in between causes this, because of how the ground check was set up.)
+-Trained with discrete jumping action. Decision Requester properties: Desicion Period: 5, Take Actions in between disabled.
+"SeekBehaviorWithJumpingSkill03", "FleeBehaviorWithJumpingSkill04".
 
 Note: There is another scene called "Weight ocer Crowd", that changes the model of each agent according to the users input. Eg. if 0.4 is given as an input, from the 12 agents in the scene the 5 of them behave according to the Seek behavior and the rest of them with the Flee Behavior.
